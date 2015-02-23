@@ -6,23 +6,10 @@ customs value of a product can be recorded. Since most businesses have the
 retail price (or list price) as the customs value, the default behavior is
 to use the list price as the customs value.
 
-.. image:: https://secure.travis-ci.org/openlabs/trytond-customs-value.png?branch=develop
-  :target: https://travis-ci.org/openlabs/trytond-customs-value.
-
-.. image:: https://coveralls.io/repos/openlabs/trytond-customs-value./badge.png
-  :target: https://coveralls.io/r/openlabs/trytond-customs-value.
-
-.. image:: https://pypip.in/download/openlabs_customs_value/badge.svg
-    :target: https://pypi.python.org/pypi/openlabs_customs_value/
-    :alt: Downloads
-
-.. image:: https://pypip.in/version/openlabs_customs_value/badge.svg
-    :target: https://pypi.python.org/pypi/openlabs_customs_value/
-    :alt: Latest Version
-
-.. image:: https://pypip.in/license/openlabs_customs_value/badge.svg
-    :target: https://pypi.python.org/pypi/openlabs_customs_value/
-    :alt: License
+[![Build Status](https://travis-ci.org/openlabs/trytond-customs-value.svg?branch=3.2.0.1)](https://travis-ci.org/openlabs/trytond-customs-value)
+[![Downloads](https://pypip.in/download/openlabs_customs_value/badge.svg)](https://pypi.python.org/pypi/openlabs_customs_value/)
+[![Latest Version](https://pypip.in/version/openlabs_customs_value/badge.svg)](https://pypi.python.org/pypi/openlabs_customs_value/)
+[![Development Status](https://pypip.in/status/openlabs_customs_value/badge.svg)](https://pypi.python.org/pypi/openlabs_customs_value/)
 
 Screenshots
 -----------
