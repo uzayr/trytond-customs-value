@@ -6,11 +6,6 @@ customs value of a product can be recorded. Since most businesses have the
 retail price (or list price) as the customs value, the default behavior is
 to use the list price as the customs value.
 
-[![Build Status](https://travis-ci.org/openlabs/trytond-customs-value.svg?branch=3.2.0.1)](https://travis-ci.org/openlabs/trytond-customs-value)
-[![Downloads](https://pypip.in/download/openlabs_customs_value/badge.svg)](https://pypi.python.org/pypi/openlabs_customs_value/)
-[![Latest Version](https://pypip.in/version/openlabs_customs_value/badge.svg)](https://pypi.python.org/pypi/openlabs_customs_value/)
-[![Development Status](https://pypip.in/status/openlabs_customs_value/badge.svg)](https://pypi.python.org/pypi/openlabs_customs_value/)
-
 Screenshots
 -----------
 
@@ -20,7 +15,7 @@ Why use this module
 -------------------
 
 This module was built to be a supporting module for the shipping modules
-of Openlabs that integrates with carriers like FedEx, UPS and USPS. When
+of Fulfil-io that integrates with carriers like FedEx, UPS and USPS. When
 generating international shipment labels, the carriers expect customs
 value to be electronically transferred to them.
 
