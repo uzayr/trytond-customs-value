@@ -13,6 +13,9 @@ class Product:
 
     __name__ = 'product.product'
 
+    country_of_origin = fields.Many2One(
+        'country.country', 'Country of Origin',
+    )
     customs_value = fields.Numeric(
         "Customs Value",
         states={
