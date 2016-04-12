@@ -7,6 +7,10 @@
             <field name="use_list_price_as_customs_value"/>
             <label name="customs_value"/>
             <field name="customs_value"/>
+            <label name="use_name_as_customs_description"/>
+            <field name="use_name_as_customs_description"/>
+            <label name="customs_description"/>
+            <field name="customs_description"/>
         </page>
     </xpath>
 </data>
