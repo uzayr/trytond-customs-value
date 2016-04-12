@@ -32,6 +32,32 @@ class Product:
         fields.Numeric("Customs Value Used"),
         'get_customs_value_used'
     )
+    customs_description = fields.Text(
+        "Customs Description",
+        states={
+            'invisible': Bool(Eval("use_name_as_customs_description")),
+            'required': Not(Bool(Eval("use_name_as_customs_description")))
+        },
+        depends=["use_name_as_customs_description"]
+    )
+
+    use_name_as_customs_description = fields.Boolean(
+        "Use Name as Customs Description ?"
+    )
+
+    customs_description_used = fields.Function(
+        fields.Text("Customs Description Used"),
+        "get_customs_description_used"
+    )
+
+    def get_customs_description_used(self, name):
+        if self.use_name_as_customs_description:
+            return self.name
+        return self.customs_description
+
+    @staticmethod
+    def default_use_name_as_customs_description():
+        return True
 
     @staticmethod
     def default_use_list_price_as_customs_value():

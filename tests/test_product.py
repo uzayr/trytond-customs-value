@@ -92,6 +92,46 @@ class TestProduct(TestBase):
 
             self.assertEqual(product.customs_value_used, product.list_price)
 
+    def test0020_check_product_customs_description(self):
+        """
+        Check customs description for product
+        """
+        with Transaction().start(DB_NAME, USER, context=CONTEXT):
+            template = self.create_product_template()
+            product, = self.Product.create([{
+                'template': template,
+            }])
+            self.assertEqual(product.use_name_as_customs_description, True)
+
+            self.assertEqual(product.customs_description_used, product.name)
+
+            product, = self.Product.create([{
+                'template': template,
+                'customs_description': "Customs Description",
+                'use_name_as_customs_description': False
+            }])
+
+            self.assertEqual(
+                product.use_name_as_customs_description, False
+            )
+
+            self.assertEqual(
+                product.customs_description_used,
+                product.customs_description
+            )
+
+            product, = self.Product.create([{
+                'template': template,
+                'customs_description': "Customs Description",
+                'use_name_as_customs_description': True
+            }])
+
+            self.assertEqual(
+                product.use_name_as_customs_description, True
+            )
+
+            self.assertEqual(product.customs_description_used, product.name)
+
 
 def suite():
     """
